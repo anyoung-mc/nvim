@@ -34,6 +34,8 @@ require('mason-lspconfig').setup({
 	ensure_installed = { 'rust_analyzer' },
 })
 
+require("mason-nvim-dap").setup()
+
 require('lspconfig').lua_ls.setup({
 	on_init = function(client)
 		-- Fix Undefined global 'vim'
