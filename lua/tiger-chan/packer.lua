@@ -54,8 +54,4 @@ return require('packer').startup(function(use)
             { "jay-babu/mason-nvim-dap.nvim" },
         }
     }
-
-    use("stevearc/overseer.nvim")
-
-    use("folke/which-key.nvim")
 end)
