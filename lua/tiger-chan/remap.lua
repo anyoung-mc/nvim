@@ -27,6 +27,9 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "Q", "<nop>")
 -- Uncomment if I start using tmux
 --vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<leader>f", function()
+    vim.lsp.buf.format()
+end)
 
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -38,11 +41,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- Set file as executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
-vim.keymap.set("n", "<leader>?", function()
-    require("which-key").show({ global = false })
-end)
-
 
 -- Dap configuration
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
