@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
-            -- Autocompletion
+            -- Autocompletes
             { 'hrsh7th/nvim-cmp' },
 
             { 'hrsh7th/cmp-buffer' },
@@ -54,4 +54,17 @@ return require('packer').startup(function(use)
             { "jay-babu/mason-nvim-dap.nvim" },
         }
     }
+
+    use({
+        "folke/trouble.nvim",
+        config = function()
+            require("trouble").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end
+    })
+
+    use("tpope/vim-fugitive")
 end)
