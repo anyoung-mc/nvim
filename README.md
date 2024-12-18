@@ -44,7 +44,7 @@ winget install BurntSushi.ripgrep.MSVC
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
-> Note: If using `git bash` it is probably worth setting the home to the bash home directory instead of local app data.
+> Note: If using `git bash` it is probably worth setting the home to the bash home directory instead of local app data. `export XDG_CONFIG_HOME="$HOME/.config`
 
 ## configuration
 
