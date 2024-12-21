@@ -14,7 +14,10 @@ dap.configurations.cpp = {
         program = function()
             return vim.fn.input("Path to executable", vim.fn.getcwd() .. "/", "file")
         end,
-        args = {},
+        args = function()
+            local input = vim.fn.input("Args: ")
+            return vim.split(input, " ")
+        end,
         cwd = "${workspaceFolder}",
         stopOnEntry = false,
         -- if you change `runInTerminal` to true, you might need to change the yama/ptrace_scope setting:
@@ -72,6 +75,10 @@ dap.configurations.rust = {
     program = function ()
       return runBuild(ExecTypes.TEST)
     end,
+    args = function()
+        local input = vim.fn.input("Args: ")
+        return vim.split(input, " ")
+    end,
     cwd = "${workspaceFolder}",
     stopOnEntry = false,
     showDisassembly = "never"
@@ -82,6 +89,10 @@ dap.configurations.rust = {
     request = "launch",
     program = function ()
       return runBuild(ExecTypes.BIN)
+    end,
+    args = function()
+        local input = vim.fn.input("Args: ")
+        return vim.split(input, " ")
     end,
     cwd = "${workspaceFolder}",
     stopOnEntry = false,
