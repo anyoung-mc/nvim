@@ -67,4 +67,6 @@ return require('packer').startup(function(use)
     })
 
     use("tpope/vim-fugitive")
+
+    use('slint-ui/vim-slint')
 end)
