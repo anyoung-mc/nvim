@@ -18,10 +18,9 @@ sudo apt install neovim
 sudo apt install ripgrep
 ```
 
-### install [packer.nvim](https://github.com/wbthomason/packer.nvim)
-
+### install [Deno](https://docs.deno.com/runtime/getting_started/installation/) 
 ```shell
-git clone --depth 1 https://github.com/wbthomason/packer.nvim  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+cargo install deno --locked
 ```
 
 ## Windows
@@ -38,17 +37,16 @@ winget install Neovim.Neovim
 winget install BurntSushi.ripgrep.MSVC
 ```
 
-### install [packer.nvim](https://github.com/wbthomason/packer.nvim)
-
-```cmd
-git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
+### install [Deno](https://docs.deno.com/runtime/getting_started/installation/) 
+```shell
+cargo install deno --locked
 ```
 
 > Note: If using `git bash` it is probably worth setting the home to the bash home directory instead of local app data. `export XDG_CONFIG_HOME="$HOME/.config`
 
-## configuration
+## Configuration
 
-### Clone this repo in to the home configuration directory
+### Clone this repo into the home configuration directory
 
 ```shell
 git clone https://github.com/tiger-chan/nvim.git ~/.config/nvim
@@ -60,7 +58,5 @@ git clone https://github.com/tiger-chan/nvim.git ~/.config/nvim
 cd ~/.config/nvim
 nvim .
 ```
-
-Navigate to `lua/tiger-chan/packer.lua` then run `:so` followed by `:PackerSync`
 
 

@@ -13,7 +13,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.undodir"
 vim.undofile = true
 
 vim.opt.hlsearch = false
@@ -30,3 +30,8 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+-- Used for vimwiki
+vim.opt.compatible = false
+vim.cmd("filetype plugin on")
+vim.cmd("syntax on")
