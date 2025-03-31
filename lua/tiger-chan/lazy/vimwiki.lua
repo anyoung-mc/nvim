@@ -20,7 +20,7 @@ return {
                 ext = "md",
             },
             {
-                path = "/mnt/d/obsidian-notes",
+                path = "D:/obsidian-notes",
                 syntax = "markdown",
                 ext = "md",
             },
