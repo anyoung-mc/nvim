@@ -25,6 +25,11 @@ return {
                 vertical = "down",
                 horizontal = "down",
             }
-        }
+        },
+        keymap = {
+            fzf = {
+                ["ctrl-q"] = "select-all+accept",
+            },
+        },
     }
 }
