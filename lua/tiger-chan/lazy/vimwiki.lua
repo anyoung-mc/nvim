@@ -15,16 +15,18 @@ return {
 
         vim.g.vimwiki_list = {
             {
-                path = path,
+                path = "/mnt/d/obsidian-notes",
                 syntax = "markdown",
                 ext = "md",
             },
             {
-                path = "/mnt/d/obsidian-notes",
+                path = path,
                 syntax = "markdown",
                 ext = "md",
             },
         }
         vim.g.vimwiki_ext2syntax = vim.empty_dict()
     end,
+    config = function()
+    end
 }
