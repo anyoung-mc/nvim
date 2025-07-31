@@ -6,6 +6,11 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+vim.keymap.set({ "i", "c" }, "<C-j>", "<Down>", { noremap = true });
+vim.keymap.set({ "i", "c" }, "<C-k>", "<Up>", { noremap = true });
+vim.keymap.set({ "i", "c" }, "<C-h>", "<Left>", { noremap = true });
+vim.keymap.set({ "i", "c" }, "<C-l>", "<Right>", { noremap = true });
+
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -44,7 +49,7 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Dap configuration
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end, { desc = "Continue" })
-vim.keymap.set('n', '<F10>', function() require('dap').step_over() end, { desc = "Step Over"})
+vim.keymap.set('n', '<F10>', function() require('dap').step_over() end, { desc = "Step Over" })
 vim.keymap.set('n', '<F11>', function() require('dap').step_into() end, { desc = "Step Into" })
 vim.keymap.set('n', '<F12>', function() require('dap').step_out() end, { desc = "Step Out" })
 vim.keymap.set('n', '<Leader>b', function() require('dap').toggle_breakpoint() end, { desc = "Togle Breakpoint" })

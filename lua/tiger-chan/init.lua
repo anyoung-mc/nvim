@@ -37,7 +37,7 @@ autocmd('LspAttach', {
             { buffer = e.buf, remap = false, desc = "[[LSP]] View references" })
         vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end,
             { buffer = e.buf, remap = false, desc = "[[LSP]] Rename symbol" })
-        vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end,
+        vim.keymap.set("i", "<A-k>", function() vim.lsp.buf.signature_help() end,
             { buffer = e.buf, remap = false, desc = "[[LSP]] Signature Help" })
     end
 })

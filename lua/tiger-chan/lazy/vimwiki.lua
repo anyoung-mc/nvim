@@ -15,7 +15,7 @@ return {
 
         vim.g.vimwiki_list = {
             {
-                path = "/mnt/d/obsidian-notes",
+                path = "~/obsidian-notes",
                 syntax = "markdown",
                 ext = "md",
             },
