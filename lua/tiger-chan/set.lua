@@ -29,6 +29,10 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.foldlevel = 99
+vim.opt.foldmethod = "indent"
+vim.opt.foldcolumn = "1"
+
 vim.g.mapleader = " "
 
 -- Used for vimwiki
